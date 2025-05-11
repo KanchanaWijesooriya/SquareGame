@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		514D9C042DD07D7C007AD046 /* SquareGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D9C032DD07D7C007AD046 /* SquareGameApp.swift */; };
+		514D9C062DD07D7C007AD046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D9C052DD07D7C007AD046 /* ContentView.swift */; };
+		514D9C082DD07D7E007AD046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514D9C072DD07D7E007AD046 /* Assets.xcassets */; };
+		514D9C0B2DD07D7E007AD046 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514D9C0A2DD07D7E007AD046 /* Preview Assets.xcassets */; };
+		514D9C152DD07D7F007AD046 /* SquareGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D9C142DD07D7F007AD046 /* SquareGameTests.swift */; };
+		514D9C1F2DD07D7F007AD046 /* SquareGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D9C1E2DD07D7F007AD046 /* SquareGameUITests.swift */; };
+		514D9C212DD07D7F007AD046 /* SquareGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D9C202DD07D7F007AD046 /* SquareGameUITestsLaunchTests.swift */; };
+		51B98F392DD0872F002D7B9B /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B98F382DD0872F002D7B9B /* Square.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		514D9C112DD07D7F007AD046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514D9BF82DD07D7C007AD046 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 514D9BFF2DD07D7C007AD046;
+			remoteInfo = SquareGame;
+		};
+		514D9C1B2DD07D7F007AD046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 514D9BF82DD07D7C007AD046 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 514D9BFF2DD07D7C007AD046;
+			remoteInfo = SquareGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		514D9C002DD07D7C007AD046 /* SquareGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		514D9C032DD07D7C007AD046 /* SquareGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGameApp.swift; sourceTree = "<group>"; };
+		514D9C052DD07D7C007AD046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		514D9C072DD07D7E007AD046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		514D9C0A2DD07D7E007AD046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		514D9C102DD07D7F007AD046 /* SquareGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		514D9C142DD07D7F007AD046 /* SquareGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGameTests.swift; sourceTree = "<group>"; };
+		514D9C1A2DD07D7F007AD046 /* SquareGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		514D9C1E2DD07D7F007AD046 /* SquareGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGameUITests.swift; sourceTree = "<group>"; };
+		514D9C202DD07D7F007AD046 /* SquareGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51B98F382DD0872F002D7B9B /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		514D9BFD2DD07D7C007AD046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514D9C0D2DD07D7F007AD046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514D9C172DD07D7F007AD046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		514D9BF72DD07D7C007AD046 = {
+			isa = PBXGroup;
+			children = (
+				514D9C022DD07D7C007AD046 /* SquareGame */,
+				514D9C132DD07D7F007AD046 /* SquareGameTests */,
+				514D9C1D2DD07D7F007AD046 /* SquareGameUITests */,
+				514D9C012DD07D7C007AD046 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		514D9C012DD07D7C007AD046 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				514D9C002DD07D7C007AD046 /* SquareGame.app */,
+				514D9C102DD07D7F007AD046 /* SquareGameTests.xctest */,
+				514D9C1A2DD07D7F007AD046 /* SquareGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		514D9C022DD07D7C007AD046 /* SquareGame */ = {
+			isa = PBXGroup;
+			children = (
+				51B98F382DD0872F002D7B9B /* Square.swift */,
+				514D9C032DD07D7C007AD046 /* SquareGameApp.swift */,
+				514D9C052DD07D7C007AD046 /* ContentView.swift */,
+				514D9C072DD07D7E007AD046 /* Assets.xcassets */,
+				514D9C092DD07D7E007AD046 /* Preview Content */,
+			);
+			path = SquareGame;
+			sourceTree = "<group>";
+		};
+		514D9C092DD07D7E007AD046 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				514D9C0A2DD07D7E007AD046 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		514D9C132DD07D7F007AD046 /* SquareGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				514D9C142DD07D7F007AD046 /* SquareGameTests.swift */,
+			);
+			path = SquareGameTests;
+			sourceTree = "<group>";
+		};
+		514D9C1D2DD07D7F007AD046 /* SquareGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				514D9C1E2DD07D7F007AD046 /* SquareGameUITests.swift */,
+				514D9C202DD07D7F007AD046 /* SquareGameUITestsLaunchTests.swift */,
+			);
+			path = SquareGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		514D9BFF2DD07D7C007AD046 /* SquareGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514D9C242DD07D7F007AD046 /* Build configuration list for PBXNativeTarget "SquareGame" */;
+			buildPhases = (
+				514D9BFC2DD07D7C007AD046 /* Sources */,
+				514D9BFD2DD07D7C007AD046 /* Frameworks */,
+				514D9BFE2DD07D7C007AD046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SquareGame;
+			productName = SquareGame;
+			productReference = 514D9C002DD07D7C007AD046 /* SquareGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		514D9C0F2DD07D7F007AD046 /* SquareGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514D9C272DD07D7F007AD046 /* Build configuration list for PBXNativeTarget "SquareGameTests" */;
+			buildPhases = (
+				514D9C0C2DD07D7F007AD046 /* Sources */,
+				514D9C0D2DD07D7F007AD046 /* Frameworks */,
+				514D9C0E2DD07D7F007AD046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				514D9C122DD07D7F007AD046 /* PBXTargetDependency */,
+			);
+			name = SquareGameTests;
+			productName = SquareGameTests;
+			productReference = 514D9C102DD07D7F007AD046 /* SquareGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		514D9C192DD07D7F007AD046 /* SquareGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 514D9C2A2DD07D7F007AD046 /* Build configuration list for PBXNativeTarget "SquareGameUITests" */;
+			buildPhases = (
+				514D9C162DD07D7F007AD046 /* Sources */,
+				514D9C172DD07D7F007AD046 /* Frameworks */,
+				514D9C182DD07D7F007AD046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				514D9C1C2DD07D7F007AD046 /* PBXTargetDependency */,
+			);
+			name = SquareGameUITests;
+			productName = SquareGameUITests;
+			productReference = 514D9C1A2DD07D7F007AD046 /* SquareGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		514D9BF82DD07D7C007AD046 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					514D9BFF2DD07D7C007AD046 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					514D9C0F2DD07D7F007AD046 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 514D9BFF2DD07D7C007AD046;
+					};
+					514D9C192DD07D7F007AD046 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 514D9BFF2DD07D7C007AD046;
+					};
+				};
+			};
+			buildConfigurationList = 514D9BFB2DD07D7C007AD046 /* Build configuration list for PBXProject "SquareGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 514D9BF72DD07D7C007AD046;
+			productRefGroup = 514D9C012DD07D7C007AD046 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				514D9BFF2DD07D7C007AD046 /* SquareGame */,
+				514D9C0F2DD07D7F007AD046 /* SquareGameTests */,
+				514D9C192DD07D7F007AD046 /* SquareGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		514D9BFE2DD07D7C007AD046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514D9C0B2DD07D7E007AD046 /* Preview Assets.xcassets in Resources */,
+				514D9C082DD07D7E007AD046 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514D9C0E2DD07D7F007AD046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514D9C182DD07D7F007AD046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		514D9BFC2DD07D7C007AD046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B98F392DD0872F002D7B9B /* Square.swift in Sources */,
+				514D9C062DD07D7C007AD046 /* ContentView.swift in Sources */,
+				514D9C042DD07D7C007AD046 /* SquareGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514D9C0C2DD07D7F007AD046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514D9C152DD07D7F007AD046 /* SquareGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514D9C162DD07D7F007AD046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514D9C1F2DD07D7F007AD046 /* SquareGameUITests.swift in Sources */,
+				514D9C212DD07D7F007AD046 /* SquareGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		514D9C122DD07D7F007AD046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 514D9BFF2DD07D7C007AD046 /* SquareGame */;
+			targetProxy = 514D9C112DD07D7F007AD046 /* PBXContainerItemProxy */;
+		};
+		514D9C1C2DD07D7F007AD046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 514D9BFF2DD07D7C007AD046 /* SquareGame */;
+			targetProxy = 514D9C1B2DD07D7F007AD046 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		514D9C222DD07D7F007AD046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		514D9C232DD07D7F007AD046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		514D9C252DD07D7F007AD046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SquareGame/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.SquareGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		514D9C262DD07D7F007AD046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SquareGame/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.SquareGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		514D9C282DD07D7F007AD046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.SquareGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SquareGame";
+			};
+			name = Debug;
+		};
+		514D9C292DD07D7F007AD046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.SquareGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SquareGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SquareGame";
+			};
+			name = Release;
+		};
+		514D9C2B2DD07D7F007AD046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.SquareGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SquareGame;
+			};
+			name = Debug;
+		};
+		514D9C2C2DD07D7F007AD046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NIBM.SquareGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SquareGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		514D9BFB2DD07D7C007AD046 /* Build configuration list for PBXProject "SquareGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514D9C222DD07D7F007AD046 /* Debug */,
+				514D9C232DD07D7F007AD046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514D9C242DD07D7F007AD046 /* Build configuration list for PBXNativeTarget "SquareGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514D9C252DD07D7F007AD046 /* Debug */,
+				514D9C262DD07D7F007AD046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514D9C272DD07D7F007AD046 /* Build configuration list for PBXNativeTarget "SquareGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514D9C282DD07D7F007AD046 /* Debug */,
+				514D9C292DD07D7F007AD046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		514D9C2A2DD07D7F007AD046 /* Build configuration list for PBXNativeTarget "SquareGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				514D9C2B2DD07D7F007AD046 /* Debug */,
+				514D9C2C2DD07D7F007AD046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 514D9BF82DD07D7C007AD046 /* Project object */;
+}
