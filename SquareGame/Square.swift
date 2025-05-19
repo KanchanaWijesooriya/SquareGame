@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 struct Square: Identifiable {
-    var id = UUID()
+    let id = UUID()
     var color: Color
-    var isMatched = false
-    var isFlipped = false
+    var isFlipped: Bool = false
+    var isMatched: Bool = false
 }

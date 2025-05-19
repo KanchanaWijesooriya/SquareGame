@@ -2,7 +2,6 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    
     @State private var squares: [Square] = []
     @State private var firstFlippedIndex: Int? = nil
     @State private var secondFlippedIndex: Int? = nil
@@ -16,6 +15,8 @@ struct ContentView: View {
     @State private var hasStarted = false
     @State private var currentLevel: Int = 1
     @State private var showGameOver: Bool = false
+    @State private var score: Int = 0
+    @State private var highScore: Int = UserDefaults.standard.integer(forKey: "HighScore")
 
     let colors: [Color] = [.red, .blue, .green, .orange, .purple, .yellow, .pink, .cyan]
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -34,9 +35,14 @@ struct ContentView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
 
+                    Text("High Score: \(highScore)")
+                        .foregroundColor(.white)
+                        .font(.headline)
+
                     Button(action: {
                         withAnimation {
                             hasStarted = true
+                            score = 0
                             startGame(level: 1)
                         }
                     }) {
@@ -59,7 +65,7 @@ struct ContentView: View {
 
                     if showGameOver {
                         VStack(spacing: 15) {
-                            Text("⛔ Game Over")
+                            Text("Game Over")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
@@ -67,8 +73,12 @@ struct ContentView: View {
                             Text("You ran out of time!")
                                 .foregroundColor(.white)
 
+                            Text("Score: \(score)")
+                                .foregroundColor(.white)
+
                             Button("Try Again") {
                                 withAnimation {
+                                    score = 0
                                     startGame(level: currentLevel)
                                 }
                             }
@@ -89,10 +99,16 @@ struct ContentView: View {
                                 .font(.title)
                                 .foregroundColor(.white)
 
-                            Text("⏱ Time Spent: \(Int(gameTime)) seconds")
+                            Text("⏱ Time Spent: \(Int(gameTime))s")
                                 .foregroundColor(.white)
 
                             Text("Moves: \(moves)")
+                                .foregroundColor(.white)
+
+                            Text("Score: \(score)")
+                                .foregroundColor(.white)
+
+                            Text("🏆 High Score: \(highScore)")
                                 .foregroundColor(.white)
 
                             Button(action: {
@@ -116,13 +132,14 @@ struct ContentView: View {
                         }
                         .padding()
                     } else {
-                        HStack(spacing: 40) {
+                        HStack(spacing: 20) {
                             if currentLevel >= 2 {
                                 Text("\(Int(timeRemaining))s left")
                             } else {
                                 Text("⏱ Time: \(Int(timeElapsed))s")
                             }
                             Text("Moves: \(moves)")
+                            Text("Score: \(score)")
                         }
                         .font(.headline)
                         .foregroundColor(.white)
@@ -235,14 +252,37 @@ struct ContentView: View {
         if squares.allSatisfy({ $0.isMatched }) {
             gameTime = timeElapsed
 
+            let earned = calculateScore(level: currentLevel, time: timeElapsed)
+            score += earned
+
+            if score > highScore {
+                highScore = score
+                UserDefaults.standard.set(score, forKey: "HighScore")
+            }
+
             if currentLevel < 2 {
-                // Automatically start next level after delay
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     startGame(level: currentLevel + 1)
                 }
             } else {
                 gameEnded = true
             }
+        }
+    }
+
+    func calculateScore(level: Int, time: TimeInterval) -> Int {
+        let base = 100
+        let timeLimit = 30.0
+        let deductionInterval = 5.0
+        let deductionPerInterval = 10
+
+        if time <= timeLimit {
+            return base
+        } else {
+            let overtime = time - timeLimit
+            let deductions = Int(overtime / deductionInterval) * deductionPerInterval
+            let finalScore = max(0, base - deductions)
+            return level >= 2 ? max(50, finalScore) : finalScore
         }
     }
 
